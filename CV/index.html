@@ -21,17 +21,31 @@
       }
       h2.Abt {
         margin-left: 20px;
-        
       }
       .AbtMe {
         margin-left: 20px;
       }
-      .Contact{
-
-        margin-left : 40px;
-      }
-      .Education{
+      .Contact {
         margin-left: 40px;
+      }
+      .Education {
+        margin-left: 40px;
+      }
+      div.Education-Item {
+        margin-left: 40px;
+      }
+      .Skills {
+        margin-left: 40px;
+      }
+      .Skills-Container {
+        display: flex;
+        gap: 10px;
+        margin-left: 40px;
+      }
+      .Skill-Item {
+        background-color: #f0f0f0;
+        padding: 8px 16px;
+        border-radius: 5px;
       }
     </style>
   </head>
@@ -40,7 +54,7 @@
     <div class="image">
       <img src="images/Profile-photo.jpeg" alt="My Photo" />
       <div>
-        <h2 class = "Abt">About me:</h2>
+        <h2 class="Abt">About me:</h2>
         <p class="AbtMe">
           Hi, I'm Haziq! I'm a passionate web developer with a love for creating
           clean, user-friendly websites. I enjoy turning ideas into reality
@@ -48,22 +62,69 @@
           When I'm not coding, you can find me exploring the outdoors,
           photography, or enjoying a good cup of coffee. I believe in continuous
           growth and am excited to connect with like-minded individuals.
-          <br />
-          <p class = "AbtMe"><strong>University:</strong> FAST National University of Computer and Emerging Sciences<br /></p>
-          <p class = "AbtMe"><strong>Degree:</strong> Computer Science</p>
-          <p class = "AbtMe"><strong>GPA:</strong> 3.05</p>
+        </p>
+        <p class="AbtMe">
+          <strong>University:</strong> FAST National University of Computer and
+          Emerging Sciences
+        </p>
+        <p class="AbtMe"><strong>Degree:</strong> Computer Science</p>
+        <p class="AbtMe"><strong>GPA:</strong> 3.05</p>
+      </div>
+    </div>
+    <div class="Contact">
+      <h2>Contact:</h2>
+      <p>
+        <strong>Email:</strong> haziqbilal7@gmail.com<br />
+        <strong>LinkedIn:</strong>
+        <a
+          href="https://www.linkedin.com/in/haziq-bilal-679558190/"
+          target="_blank"
+          >linkedin.com/in/haziq-bilal-679558190/</a
+        ><br />
+        <strong>Github:</strong>
+        <a href="https://www.github.com/Haziqbilall" target="_blank"
+          >github.com/Haziqbilall</a
+        >
+      </p>
+    </div>
+    <div class="Education">
+      <h2>Education:</h2>
+    </div>
+    <div class="Education-Container">
+      <div class="Education-Item">
+        <h3>University:</h3>
+        <p>
+          <strong
+            >FAST National University of Computer and Emerging Sciences</strong
+          ><br />
+          Bachelor of Computer Science<br />
+          2023-Present
+        </p>
+      </div>
+      <div class="Education-Item">
+        <h3>College:</h3>
+        <p>
+          <strong>International School Lahore</strong><br />
+          A-Levels<br />
+          2021-2023
         </p>
       </div>
     </div>
-    <div class = "Contact">
-      <h2>Contact:</h2>
-      <p><strong>Email:</strong> haziqbilal7@gmail.com <br>
-      <strong>LinkedIn:</strong><a href= "https://www.linkedin.com/in/haziq-bilal-679558190/" target ="_blank">linkedin.com/in/haziq-bilal-679558190/</a> <br />
-      <strong>Github:</strong><a href = "https://www.github.com/Haziqbilall" target ="_blank">github.com/Haziqbilall</a>
-      </p>
+
+    <div class="Skills">
+      <h2>Skills:</h2>
     </div>
-    <div class = "Education">
-    <h2>Education:</h2>
+    <div class="Skills-Container">
+      <span class="Skill-Item">C++</span>
+      <span class="Skill-Item">C</span>
+      <span class="Skill-Item">Python</span>
+      <span class="Skill-Item">JavaScript</span>
+      <span class="Skill-Item">TypeScript</span>
+      <span class="Skill-Item">Express</span>
+      <span class="Skill-Item">NestJS</span>
+      <span class="Skill-Item">SQL</span>
+      <span class="Skill-Item">Git</span>
+      <span class="Skill-Item">MongoDB</span>
     </div>
   </body>
 </html>
