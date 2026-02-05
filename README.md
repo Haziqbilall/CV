@@ -122,32 +122,6 @@ The portfolio is organized into distinct content areas:
 | Project Portfolio | Detailed descriptions of 5 major development projects with tech stacks |
 | Contact Interface | Web form for direct message submission                                 |
 
----
-
-## Technologies & Skills Demonstrated
-
-Through this website, I showcase proficiency in:
-
-**Programming Languages:** C, C++, Python, JavaScript, TypeScript  
-**Backend Technologies:** Node.js, Express.js, NestJS  
-**Database Systems:** SQL Server, PostgreSQL, MongoDB  
-**Development Tools:** Git version control  
-**Cloud Platforms:** Amazon Web Services (AWS)
-
----
-
-## Projects Highlighted
-
-The portfolio features five significant development projects:
-
-1. **Gym Management System** (C++) - Console application with workout planning and health metrics
-2. **Car Rental Platform** (C++) - Object-oriented rental management system
-3. **Flappy Bird Recreation** (Assembly x86) - Game development with low-level programming
-4. **Cinema Booking System** (Node.js Stack) - Full-stack web application with authentication
-5. **Industrial Maintenance Tracker** (NestJS/React) - Enterprise-grade application deployed on AWS
-
----
-
 ## Get In Touch
 
 Feel free to reach out through any of these channels:
