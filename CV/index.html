@@ -45,6 +45,15 @@
         height: 350px;
         border-radius: 5%;
         object-fit: cover;
+        animation: float 3s ease-in-out infinite;
+      }
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
       }
       h2.Abt {
         margin-top: 100px;
@@ -149,6 +158,7 @@
           align-items: center;
           text-align: center;
       }
+    } 
     </style>
   </head>
   <body>
@@ -321,6 +331,11 @@
           </p>
         </div>
       </div>
+    </div>
+    <div class = "download-btn-container">
+      <a href = "haziqCV.pdf" download = "Haziq-BilalCV.pdf" class = "download-cv-btn"">Download CV
+      <button class = "download-cv-btn">Print CV</button>
+      </a>
     </div>
     <footer>
       <p>&copy;2026 Haziq Bilal. All rights reserved.</p>
