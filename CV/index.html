@@ -5,126 +5,320 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
       h1 {
         display: flex;
         justify-content: center;
+        margin: 20px 0;
+        font-size: 2em;
+      }
+      h2 {
+        margin-bottom: 15px;
+      }
+      h3 {
+        margin-bottom: 8px;
+      }
+      p {
+        margin-bottom: 10px;
       }
       .image {
         display: flex;
+        margin-bottom: 30px;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      .pic {
+        display: flex;
+        margin-top: 60px;
+        flex-shrink: 0;
       }
       img {
         width: 250px;
-        height: 250px;
-        margin-left: 40px;
+        height: 350px;
         border-radius: 5%;
         object-fit: cover;
       }
       h2.Abt {
-        margin-left: 20px;
+        margin-top: 100px;
+        margin-bottom: 5px;
+      }
+      h3.Abt {
+        margin-top: 100px;
+        margin-bottom: 10px;
       }
       .AbtMe {
-        margin-left: 20px;
+        margin-bottom: 10px;
       }
       .Contact {
-        margin-left: 40px;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+      .Contact p {
+        line-height: 1.8;
       }
       .Education {
-        margin-left: 40px;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+      .Education-Container {
+        margin-bottom: 30px;
       }
       div.Education-Item {
-        margin-left: 40px;
+        margin-left: 10px;
+        margin-bottom: 15px;
       }
       .Skills {
-        margin-left: 40px;
+        margin-left: 10px;
+        margin-top: 10px;
       }
       .Skills-Container {
         display: flex;
         gap: 10px;
-        margin-left: 40px;
+        margin-left: 10px;
+        flex-wrap: wrap;
       }
       .Skill-Item {
         background-color: #f0f0f0;
         padding: 8px 16px;
         border-radius: 5px;
       }
+      .main-content {
+        display: flex;
+        gap: 30px;
+        padding: 20px;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+      .left-section {
+        flex: 1;
+      }
+      .right-section {
+        flex: 1;
+        padding: 20px;
+      }
+      .Projects h2 {
+        margin-top: 0;
+      }
+      .Project-Item {
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      .Project-Item:last-child {
+        border-bottom: none;
+      }
+      .Project-Item h3 {
+        margin-bottom: 10px;
+        line-height: 1.4;
+      }
+      .Project-Item p {
+        margin-bottom: 10px;
+        text-align: justify;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+      }
+      footer a {
+        color: #4caf50;
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
-    <h1>Portfolio</h1>
-    <div class="image">
-      <img src="images/Profile-photo.jpeg" alt="My Photo" />
-      <div>
-        <h2 class="Abt">About me:</h2>
-        <p class="AbtMe">
-          Hi, I'm Haziq! I'm a passionate web developer with a love for creating
-          clean, user-friendly websites. I enjoy turning ideas into reality
-          through code and am always eager to learn new technologies.<br />
-          When I'm not coding, you can find me exploring the outdoors,
-          photography, or enjoying a good cup of coffee. I believe in continuous
-          growth and am excited to connect with like-minded individuals.
-        </p>
-        <p class="AbtMe">
-          <strong>University:</strong> FAST National University of Computer and
-          Emerging Sciences
-        </p>
-        <p class="AbtMe"><strong>Degree:</strong> Computer Science</p>
-        <p class="AbtMe"><strong>GPA:</strong> 3.05</p>
+    <h1>Haziq Bilal</h1>
+    <div class="main-content">
+      <div class="left-section">
+        <div class="image">
+          <div class="pic">
+            <img src="images/Profile-photo.jpeg" alt="My Photo" />
+          </div>
+          <div>
+            <div class = "Pic_Text">
+            <h3 class="Abt">About me:</h3>
+            <p class="AbtMe">
+            </div>
+              Hi, I'm Haziq! I'm a passionate web developer with a love for
+              creating clean, user-friendly websites. I enjoy turning ideas into
+              reality through code and am always eager to learn new
+              technologies.
+            </p>
+            <p class="AbtMe">
+              When I'm not coding, you can find me exploring the outdoors,
+              photography, or enjoying a good cup of coffee. I believe in
+              continuous growth and am excited to connect with like-minded
+              individuals.
+            </p>
+          </div>
+        </div>
+        <div class="Contact">
+          <h2>Contact:</h2>
+          <p>
+            <strong>Email:</strong> haziqbilal7@gmail.com<br />
+            <strong>LinkedIn:</strong>
+            <a
+              href="https://www.linkedin.com/in/haziq-bilal-679558190/"
+              target="_blank"
+              >linkedin.com/in/haziq-bilal-679558190/</a
+            ><br />
+            <strong>Github:</strong>
+            <a href="https://www.github.com/Haziqbilall" target="_blank"
+              >github.com/Haziqbilall</a
+            >
+          </p>
+        </div>
+        <div class="Education">
+          <h2>Education:</h2>
+        </div>
+        <div class="Education-Container">
+          <div class="Education-Item">
+            <h3>University:</h3>
+            <p>
+              <strong
+                >FAST National University of Computer and Emerging
+                Sciences</strong
+              ><br />
+              Bachelor of Computer Science<br />
+              2023-Present
+            </p>
+          </div>
+          <div class="Education-Item">
+            <h3>College:</h3>
+            <p>
+              <strong>International School Lahore</strong><br />
+              A-Levels<br />
+              2021-2023
+            </p>
+          </div>
+        </div>
+
+        <div class="Skills">
+          <h2>Skills:</h2>
+        </div>
+        <div class="Skills-Container">
+          <span class="Skill-Item">C++</span>
+          <span class="Skill-Item">C</span>
+          <span class="Skill-Item">Python</span>
+          <span class="Skill-Item">JavaScript</span>
+          <span class="Skill-Item">TypeScript</span>
+          <span class="Skill-Item">Express</span>
+          <span class="Skill-Item">NestJS</span>
+          <span class="Skill-Item">SQL</span>
+          <span class="Skill-Item">Git</span>
+          <span class="Skill-Item">MongoDB</span>
+        </div>
+      </div>
+
+      <div class="right-section">
+        <div class="Projects">
+          <h2>Projects:</h2>
+        </div>
+
+        <div class="Project-Item">
+          <h3>Gym App | C++ <span style="float: right">Dec 2023</span></h3>
+          <p>
+            Developed a C++ terminal-based gym and fitness system featuring
+            structured workout routines, training tips, workout-oriented meal
+            guidance, and multiple health calculators, providing an interactive,
+            menu-driven fitness experience through the command line.
+          </p>
+          <p>
+            <strong>Features:</strong> Custom workout plans, BMI calculator,
+            nutrition tracking, meal recommendations
+          </p>
+        </div>
+
+        <div class="Project-Item">
+          <h3>
+            Car Rental System | C++ <span style="float: right">Apr 2024</span>
+          </h3>
+          <p>
+            Developed a C++ terminal-based car rental management system using
+            object-oriented programming concepts, implementing features for
+            vehicle management, customer handling, rentals, and returns through
+            a structured, menu-driven interface.
+          </p>
+          <p>
+            <strong>Features:</strong> Vehicle inventory, customer registration,
+            rental booking, pricing calculation, damage assessment
+          </p>
+        </div>
+
+        <div class="Project-Item">
+          <h3>
+            Flappy Bird Clone | NASM x86 Assembly Language
+            <span style="float: right">Dec 2024</span>
+          </h3>
+          <p>
+            Developed a Flappy Bird-style side-scrolling game using x86
+            Assembly, implementing dynamic obstacle generation and precise
+            collision detection with direct video memory manipulation.
+          </p>
+          <p>
+            <strong>Features:</strong> Real-time input handling, sprite
+            animation, score tracking, VGA graphics rendering
+          </p>
+        </div>
+
+        <div class="Project-Item">
+          <h3>
+            Cinema Web App | Node.js, Express.js, SQL Server, HTML/CSS,
+            JavaScript <span style="float: right">May 2025</span>
+          </h3>
+          <p>
+            Designed a full-stack web application for cinema management,
+            including movie listings, ticket booking, and showtime scheduling
+            with user authentication and admin panel for content management.
+          </p>
+          <p>
+            <strong>Features:</strong> Movie browsing, seat selection, ticket
+            booking, showtime scheduling, user profiles, admin dashboard
+          </p>
+        </div>
+
+        <div class="Project-Item">
+          <h3>
+            Water Filtration Plant Maintenance App | Nest.js, React, TypeORM,
+            PostgreSQL, Typescript, AWS
+            <span style="float: right">Aug 2025</span>
+          </h3>
+          <p>
+            Built a production-grade enterprise application using NestJS backend
+            with TypeORM and PostgreSQL, deployed on AWS with S3 storage and
+            maps integration for managing water plant operations, employee
+            reports, and maintenance logs.
+          </p>
+          <p>
+            <strong>Features:</strong> Maintenance scheduling, employee
+            management, operation monitoring, report generation, map
+            integration, AWS S3 storage
+          </p>
+        </div>
       </div>
     </div>
-    <div class="Contact">
-      <h2>Contact:</h2>
+    <footer>
+      <p>&copy;2026 Haziq Bilal. All rights reserved.</p>
       <p>
-        <strong>Email:</strong> haziqbilal7@gmail.com<br />
-        <strong>LinkedIn:</strong>
+        <a href="mailto:haziqbilal7@gmail.com">Email</a> |
         <a
           href="https://www.linkedin.com/in/haziq-bilal-679558190/"
           target="_blank"
-          >linkedin.com/in/haziq-bilal-679558190/</a
-        ><br />
-        <strong>Github:</strong>
-        <a href="https://www.github.com/Haziqbilall" target="_blank"
-          >github.com/Haziqbilall</a
+          >LinkedIn</a
         >
+        |
+        <a href="https://www.github.com/Haziqbilall" target="_blank">GitHub</a>
       </p>
-    </div>
-    <div class="Education">
-      <h2>Education:</h2>
-    </div>
-    <div class="Education-Container">
-      <div class="Education-Item">
-        <h3>University:</h3>
-        <p>
-          <strong
-            >FAST National University of Computer and Emerging Sciences</strong
-          ><br />
-          Bachelor of Computer Science<br />
-          2023-Present
-        </p>
-      </div>
-      <div class="Education-Item">
-        <h3>College:</h3>
-        <p>
-          <strong>International School Lahore</strong><br />
-          A-Levels<br />
-          2021-2023
-        </p>
-      </div>
-    </div>
-
-    <div class="Skills">
-      <h2>Skills:</h2>
-    </div>
-    <div class="Skills-Container">
-      <span class="Skill-Item">C++</span>
-      <span class="Skill-Item">C</span>
-      <span class="Skill-Item">Python</span>
-      <span class="Skill-Item">JavaScript</span>
-      <span class="Skill-Item">TypeScript</span>
-      <span class="Skill-Item">Express</span>
-      <span class="Skill-Item">NestJS</span>
-      <span class="Skill-Item">SQL</span>
-      <span class="Skill-Item">Git</span>
-      <span class="Skill-Item">MongoDB</span>
-    </div>
+    </footer>
   </body>
 </html>
