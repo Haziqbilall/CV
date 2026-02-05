@@ -4,165 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-      }
-      h1 {
-        display: flex;
-        justify-content: center;
-        margin: 20px 0;
-        font-size: 2em;
-      }
-      h2 {
-        margin-bottom: 15px;
-      }
-      h3 {
-        margin-bottom: 8px;
-      }
-      p {
-        margin-bottom: 10px;
-      }
-      .image {
-        display: flex;
-        margin-bottom: 30px;
-        align-items: flex-start;
-        gap: 20px;
-      }
-      .pic {
-        display: flex;
-        margin-top: 60px;
-        flex-shrink: 0;
-      }
-      img {
-        width: 250px;
-        height: 350px;
-        border-radius: 5%;
-        object-fit: cover;
-        animation: float 3s ease-in-out infinite;
-      }
-      @keyframes float {
-        0%, 100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-20px);
-        }
-      }
-      h2.Abt {
-        margin-top: 100px;
-        margin-bottom: 5px;
-      }
-      h3.Abt {
-        margin-top: 100px;
-        margin-bottom: 10px;
-      }
-      .AbtMe {
-        margin-bottom: 10px;
-      }
-      .Contact {
-        margin-left: 10px;
-        margin-top: 10px;
-      }
-      .Contact p {
-        line-height: 1.8;
-      }
-      .Education {
-        margin-left: 10px;
-        margin-top: 10px;
-      }
-      .Education-Container {
-        margin-bottom: 30px;
-      }
-      div.Education-Item {
-        margin-left: 10px;
-        margin-bottom: 15px;
-      }
-      .Skills {
-        margin-left: 10px;
-        margin-top: 10px;
-      }
-      .Skills-Container {
-        display: flex;
-        gap: 10px;
-        margin-left: 10px;
-        flex-wrap: wrap;
-      }
-      .Skill-Item {
-        background-color: #f0f0f0;
-        padding: 8px 16px;
-        border-radius: 5px;
-      }
-      .main-content {
-        display: flex;
-        gap: 30px;
-        padding: 20px;
-        max-width: 1400px;
-        margin: 0 auto;
-      }
-      .left-section {
-        flex: 1;
-      }
-      .right-section {
-        flex: 1;
-        padding: 20px;
-      }
-      .Projects h2 {
-        margin-top: 0;
-      }
-      .Project-Item {
-        margin-bottom: 30px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #e0e0e0;
-      }
-      .Project-Item:last-child {
-        border-bottom: none;
-      }
-      .Project-Item h3 {
-        margin-bottom: 10px;
-        line-height: 1.4;
-      }
-      .Project-Item p {
-        margin-bottom: 10px;
-        text-align: justify;
-      }
-      footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        margin-top: 40px;
-      }
-      footer a {
-        color: #4caf50;
-        text-decoration: none;
-      }
-      @media screen and (max-width:768px){
-        .main-content{
-          flex-direction: column;
-          gap: 30px;
-          padding: 10px;
-        }
-        .left-section, .right-section{
-          width: 100%;
-          padding: 10px;
-        }
-        .image{
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-      }
-    } 
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Haziq Bilal</h1>
+    <input type="checkbox" id="theme-switcher" />
+    <div class="page-container">
+    <div class="header-container">
+      <div class="title-section">
+        <h1>Haziq Bilal</h1>
+        <p>Software Engineer</p>
+      </div>
+      <div class="download-btn-container">
+        <label for="theme-switcher" class="theme-toggle-button"></label>
+        <a href="haziqCV (1).pdf" download="Haziq_Bilal_CV.pdf" class="download-cv-btn">Download CV</a>
+      </div>
+    </div>
     <div class="main-content">
       <div class="left-section">
         <div class="image">
@@ -174,16 +30,7 @@
             <h3 class="Abt">About me:</h3>
             <p class="AbtMe">
             </div>
-              Hi, I'm Haziq! I'm a passionate web developer with a love for
-              creating clean, user-friendly websites. I enjoy turning ideas into
-              reality through code and am always eager to learn new
-              technologies.
-            </p>
-            <p class="AbtMe">
-              When I'm not coding, you can find me exploring the outdoors,
-              photography, or enjoying a good cup of coffee. I believe in
-              continuous growth and am excited to connect with like-minded
-              individuals.
+              Currently pursuing BS Computer Science at FAST NUCES, I have developed strong expertise in data structures, algorithms, system programming, and full-stack development. My academic journey includes comprehensive coursework in OOP, Database Systems, Cloud Computing, and Computer Networks.
             </p>
           </div>
         </div>
@@ -242,6 +89,26 @@
           <span class="Skill-Item">SQL</span>
           <span class="Skill-Item">Git</span>
           <span class="Skill-Item">MongoDB</span>
+        </div>
+
+        <div class="contact-form">
+          <h2>Get In Touch:</h2>
+          <form action="https://formspree.io/f/mkovwvpy" method="POST">
+            <input type="hidden" name="_next" value="index.html">
+            <div class="cont-form">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="cont-form">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="cont-form">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
         </div>
       </div>
 
@@ -332,11 +199,6 @@
         </div>
       </div>
     </div>
-    <div class = "download-btn-container">
-      <a href = "haziqCV.pdf" download = "Haziq-BilalCV.pdf" class = "download-cv-btn"">Download CV
-      <button class = "download-cv-btn">Print CV</button>
-      </a>
-    </div>
     <footer>
       <p>&copy;2026 Haziq Bilal. All rights reserved.</p>
       <p>
@@ -350,5 +212,6 @@
         <a href="https://www.github.com/Haziqbilall" target="_blank">GitHub</a>
       </p>
     </footer>
+    </div>
   </body>
 </html>
